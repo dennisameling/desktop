@@ -12,4 +12,3 @@ app/coverage
 app/static/common
 app/test/fixtures
 gemoji
-*.md

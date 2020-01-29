@@ -1,7 +1,7 @@
 singleQuote: true
 trailingComma: es5
 semi: false
-proseWrap: always
+proseWrap: preserve
 
 overrides:
   - files: '*.scss'
