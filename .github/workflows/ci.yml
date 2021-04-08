@@ -101,7 +101,11 @@ jobs:
           S3_KEY: ${{ secrets.S3_KEY }}
           S3_SECRET: ${{ secrets.S3_SECRET }}
           S3_BUCKET: github-desktop
+      - name: Package release
+        run: yarn package
       - uses: actions/upload-artifact@v2
         with:
           name: build-${{ runner.os }}-${{ matrix.arch }}
-          path: dist/
+          path: |
+            dist/*.zip
+            dist/*.exe
